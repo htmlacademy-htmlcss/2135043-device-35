@@ -1,0 +1,284 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  min-width: 1440px;
+  min-height: 100%;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: #ffffff;
+  color: #444444;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-header {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 40px 60px 134px;
+  color: #000000;
+  background-color: #ffe17f;
+  box-sizing: border-box;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  display: flex;
+  width: 1040px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-link {
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+}
+
+.link-about {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.link-card {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.main-index {
+  background-color: #ffffff;
+}
+
+.page-container {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.hero {
+  display: flex;
+  gap: 40px;
+  width: 1160px;
+}
+
+.bracelet-open,
+.monopod-open {
+  display: none;
+}
+
+.slider-about {
+  width: 560px;
+}
+
+.slider-item {
+  text-align: left;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: left;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-description {
+  margin: 0;
+  padding: 0;
+}
+
+.slider-argument {
+  color: #000000;
+}
+
+.slider-comment {
+  font-size: 16px;
+}
+
+.catalog-main {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.catalog-list {
+  display: flex;
+  width: 1160px;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-card {
+  width: 160px;
+  min-height: 253px;
+}
+
+.catalog-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.advantages {
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.about-shop {
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.shipping {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  background-color: #f0f0f0;
+  color: #000000;
+  text-align: center;
+}
+
+.company-name-link {
+  text-decoration: none;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.contacts-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-phone {
+  color: inherit;
+}
+
+.subscription {
+  background-color: #f0f0f0;
+  text-align: left;
+}
+
+.page-footer {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+.link-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.footer-address-shop,
+.footer-contacts-phone {
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  color: inherit;
+}
+
+/*Каталог*/
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.catalog-subtitle {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.catalog-filter-group {
+  border: 0;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  color: #000000;
+}
+
+.control-label {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  color: #000000;
+}
+
+.product-card-link {
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  color: #000000;
+  text-decoration: none;
+}
+
+.product-card-price {
+  line-height: 22px;
+  text-align: right;
+}
+
+.pagination-button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
