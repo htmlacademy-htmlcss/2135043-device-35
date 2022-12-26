@@ -4,7 +4,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="styles/styles_fonts.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" type="image/png" sizes="32x32" href="images/icon/favicon.png">
   </head>
@@ -103,14 +102,17 @@
         </ul>
         <ul class="navigation-list navigation-delivery">
           <li class="navigation-item about-catalog">
-            <a class="navigation-link link-about" href="#">Каталог товаров</a>
-            <button class="navigation-open-button" type="button">
+            <a class="navigation-link link-about link-first" href="#">Каталог товаров</a>
+            <button class="navigation-open-button open-plus" type="button">
               <span class="visually-hidden">Открыть</span>
+            </button>
+            <button class="navigation-close-button open-minus" type="button">
+              <span class="visually-hidden">Закрыть</span>
             </button>
             <div class="catalog-container catalog-open">
               <ul class="navigation-catalog catalog-left">
                 <li class="navigation-card">
-                  <a class="navigation-link link-card" href="#">Виртуальная реальность</a>
+                  <a class="navigation-link link-card card-active" href="#">Виртуальная реальность</a>
                 </li>
                 <li class="navigation-card">
                   <a class="navigation-link link-card" href="#">Моноподы для селфи</a>
@@ -134,7 +136,7 @@
               </ul>
             </div>
           </li>
-          <li class="navigation-item about-about">
+          <li class="navigation-item about-about about-active">
             <a class="navigation-link link-about" href="#">Доставка</a>
           </li>
           <li class="navigation-item about-warranty">
@@ -288,6 +290,7 @@
                       </svg>
                     </span>
                   </a>
+                  <div class="overlay-card"></div>
                   <a class="button button-product-card">
                     <span class="button-product-text">Подробнее</span>
                   </a>
@@ -301,9 +304,10 @@
                       <p class="product-card-price">1500 ₽</p>
                     </div>
                   </a>
-                  <span class="button button-product-card">
+                  <div class="overlay-card"></div>
+                  <a class="button button-product-card">
                     <span class="button-product-text">Подробнее</span>
-                  </span>
+                  </a>
                 </li>
                 <li class="product-card">
                   <a class="product-card-link" href="#">
@@ -314,9 +318,10 @@
                       <p class="product-card-price">2500 ₽</p>
                     </div>
                   </a>
-                  <span class="button button-product-card">
+                  <div class="overlay-card"></div>
+                  <a class="button button-product-card">
                     <span class="button-product-text">Подробнее</span>
-                  </span>
+                  </a>
                 </li>
                 <li class="product-card">
                   <a class="product-card-link" href="#">
@@ -327,9 +332,10 @@
                       <p class="product-card-price">1500 ₽</p>
                     </div>
                   </a>
-                  <span class="button button-product-card">
+                  <div class="overlay-card"></div>
+                  <a class="button button-product-card">
                     <span class="button-product-text">Подробнее</span>
-                  </span>
+                  </a>
                 </li>
               </ul>
               <button class="button button-product" type="submit">Загрузить ещё</button>
