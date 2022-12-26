@@ -2,25 +2,28 @@
 <html lang="ru">
 
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="styles/styles_fonts.css" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon/favicon.png">
   </head>
 
   <body>
     <header class="page-header">
       <a class="header-link" href="#">
         <img class="header-link-logo" src="images/icon/icon_device.svg" width="145" height="36"
-          alt="Магазин техники Девайс" />
+          alt="Магазин техники Девайс">
       </a>
       <nav class="navigation">
         <div class="navigation-wrapper">
           <ul class="navigation-list">
             <li class="navigation-item item-form">
               <form class="navigation-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input class="field" placeholder="Поиск по сайту" type="text" name="navigation-search"
-                  id="navigation-search" required />
+                <label class="navigation-label">
+                  <span class="visually-hidden">Поле для ввода текста.</span>
+                  <input class="field" placeholder="Поиск по сайту" type="text" name="navigation-search"
+                    id="navigation-search" required>
+                </label>
                 <button class="button search-button" type="submit">Найти</button>
               </form>
             </li>
@@ -98,7 +101,7 @@
         </div>
         <ul class="navigation-list navigation-delivery">
           <li class="navigation-item about-catalog">
-            <a class="navigation-link link-about" href="#">Каталог товаров</a>
+            <a class="navigation-link link-about link-first" href="#">Каталог товаров</a>
             <button class="navigation-open-button open-plus" type="button">
               <span class="visually-hidden">Открыть</span>
             </button>
@@ -161,7 +164,7 @@
                   <span class="visually-hidden">Следующее фото</span>
                 </button>
               </div>
-              <div class=" foto-quadrocopter">
+              <div class="foto-quadrocopter">
                 <img class="slider-foto" src="images/slider/slider_quadrocopter.png" width="560" height="560"
                   alt="Фотографии товаров магазина Девайс - Фотография квадрокоптера.">
               </div>
@@ -175,7 +178,7 @@
               </div>
             </div>
           </div>
-          <div class="slider-about  quadrocopter-open">
+          <div class="slider-about quadrocopter-open">
             <h2 class="visually-hidden">Описание товаров магазина Девайс</h2>
             <ul class="slider-item item-quadrocopter">
               <li class="about-quadrocopter">
@@ -189,19 +192,19 @@
                   лазером, замаскированным под стандартную камеру.
                 </p>
               </li>
-              <li class="about-quadrocopter">
-                <a class="button button-slider-about">
+              <li class="about-quadrocopter quadrocopter-button">
+                <a class="button button-slider-about" href="#">
                   <span class="button-slider-text">Подробнее</span>
                 </a>
               </li>
             </ul>
             <div class="list-container">
               <dl class="about-quadrocopter">
-                <dt class="slider-argument">800м</dt>
+                <dt class="slider-argument">800 м</dt>
                 <dd class="slider-comment">Дальность полета</dd>
               </dl>
               <dl class="about-quadrocopter">
-                <dt class="slider-argument">50м</dt>
+                <dt class="slider-argument">50 м</dt>
                 <dd class="slider-comment">Радиус поражения</dd>
               </dl>
             </div>
@@ -218,7 +221,7 @@
                 </p>
               </li>
               <li class="about-bracelet">
-                <a class="button button-slider-about">
+                <a class="button button-slider-about" href="#">
                   <span class="button-slider-text">Подробнее</span>
                 </a>
               </li>
@@ -240,7 +243,7 @@
                 </p>
               </li>
               <li class="about-monopod">
-                <a class="button button-slider-about">
+                <a class="button button-slider-about" href="#">
                   <span class="button-slider-text">Подробнее</span>
                 </a>
               </li>
@@ -489,7 +492,7 @@
               <p class="contacts-address-text">
                 Санкт-Петербург, набережная реки Карповки, 5, литера П.
               </p>
-              <a class="contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+              <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
             </address>
             <h4 class="contacts-subtitle">Время работы</h4>
             <ul class="contacts-schedule">
@@ -504,17 +507,16 @@
         <section class="subscription">
           <div class="subscription-container">
             <h2 class="title subscription-title">
-              Подпишитесь<br />
-              на рассылку
+              Подпишитесь на рассылку
             </h2>
             <p class="subscription-description">
-              Еженедельный дайджест с обзорами новинок,<br />
+              Еженедельный дайджест с обзорами новинок,<br>
               длительными тест-драйвами, распаковками, а также акции,
               спецпредложения и вот это вот всё.
             </p>
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
               <input class="field subscription-field form-error" placeholder="Ваш e-mail" type="email"
-                name="subscription-email" id="subscription-email" required />
+                name="subscription-email" id="subscription-email" required>
               <button class="button subscription-button" type="submit">
                 Подписаться
               </button>
@@ -630,7 +632,7 @@
                 <label class="name-field" for="mail-title">Ваш e-mail:</label>
                 <input class="search-form-field field-mail field-error" type="email" id="mail-title" name="mail-title"
                   placeholder="Укажите e-mail" required>
-                <span class="search-form-comment comment-error">Забавный у Вас адрес</span>
+                <span class="search-form-comment modal-error">Забавный у Вас адрес</span>
               </div>
             </div>
             <div class="search-modal-container">
