@@ -99,52 +99,56 @@
             </li>
           </ul>
         </div>
-        <ul class="navigation-list navigation-delivery">
-          <li class="navigation-item about-catalog">
-            <a class="navigation-link link-about link-first" href="#">Каталог товаров</a>
-            <button class="navigation-open-button open-plus" type="button">
-              <span class="visually-hidden">Открыть</span>
-            </button>
-            <button class="navigation-close-button open-minus" type="button">
-              <span class="visually-hidden">Закрыть</span>
-            </button>
-            <div class="catalog-container catalog-open">
-              <ul class="navigation-catalog catalog-left">
-                <li class="navigation-card">
-                  <a class="navigation-link link-card card-active" href="#">Виртуальная реальность</a>
-                </li>
-                <li class="navigation-card">
-                  <a class="navigation-link link-card" href="#">Моноподы для селфи</a>
-                </li>
-                <li class="navigation-card">
-                  <a class="navigation-link link-card" href="#">Экшн-камеры</a>
-                </li>
-              </ul>
-              <ul class="navigation-catalog catalog-middle">
-                <li class="navigation-card">
-                  <a class="navigation-link link-card" href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="navigation-card">
-                  <a class="navigation-link link-card" href="#">Умные часы</a>
-                </li>
-              </ul>
-              <ul class="navigation-catalog catalog-right">
-                <li class="navigation-card">
-                  <a class="navigation-link link-card" href="#">Квадрокоптеры</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="navigation-item about-about about-active">
-            <a class="navigation-link link-about" href="#">Доставка</a>
-          </li>
-          <li class="navigation-item about-warranty">
-            <a class="navigation-link link-about" href="#">Гарантия</a>
-          </li>
-          <li class="navigation-item about-contacts">
-            <a class="navigation-link link-about" href="#">Контакты</a>
-          </li>
-        </ul>
+        <div class="navigation-wrapper">
+          <ul class="navigation-list navigation-delivery">
+            <li class="navigation-item about-catalog">
+              <a class="navigation-link link-about link-first" href="#">Каталог товаров</a>
+              <button class="navigation-open-button open-plus" type="button">
+                <span class="visually-hidden">Открыть</span>
+              </button>
+              <button class="navigation-close-button open-minus" type="button">
+                <span class="visually-hidden">Закрыть</span>
+              </button>
+              <div class="catalog-container catalog-open">
+                <ul class="navigation-catalog catalog-left">
+                  <li class="navigation-card">
+                    <a class="navigation-link link-card card-active" href="#">Виртуальная реальность</a>
+                  </li>
+                  <li class="navigation-card">
+                    <a class="navigation-link link-card" href="#">Моноподы для селфи</a>
+                  </li>
+                  <li class="navigation-card">
+                    <a class="navigation-link link-card" href="#">Экшн-камеры</a>
+                  </li>
+                </ul>
+                <ul class="navigation-catalog catalog-middle">
+                  <li class="navigation-card">
+                    <a class="navigation-link link-card" href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li class="navigation-card">
+                    <a class="navigation-link link-card" href="#">Умные часы</a>
+                  </li>
+                </ul>
+                <ul class="navigation-catalog catalog-right">
+                  <li class="navigation-card">
+                    <a class="navigation-link link-card" href="#">Квадрокоптеры</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="navigation-list navigation-in">
+            <li class="navigation-item about-about about-active">
+              <a class="navigation-link link-about" href="#">Доставка</a>
+            </li>
+            <li class="navigation-item about-warranty">
+              <a class="navigation-link link-about" href="#">Гарантия</a>
+            </li>
+            <li class="navigation-item about-contacts">
+              <a class="navigation-link link-about" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="main-container main-index">
@@ -517,8 +521,11 @@
               спецпредложения и вот это вот всё.
             </p>
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="field subscription-field form-error" placeholder="Ваш e-mail" type="email"
-                name="subscription-email" id="subscription-email" required>
+              <label class="subscription-email">
+                <span class="visually-hidden">Поле для ввода текста.</span>
+                <input class="field subscription-field form-error" placeholder="Ваш e-mail" type="email"
+                  name="subscription-email" id="subscription-email" required>
+              </label>
               <button class="button subscription-button" type="submit">
                 Подписаться
               </button>
