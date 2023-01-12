@@ -2690,33 +2690,6 @@ body {
   box-sizing: border-box;
 }
 
-.control:hover {
-  opacity: 60%;
-}
-
-.control:focus-visible {
-  outline: 0;
-}
-
-.control:focus-visible::before {
-  position: absolute;
-  content: "";
-  width: 20px;
-  height: 20px;
-  top: 0;
-  left: 0;
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
-}
-
-.control:active {
-  opacity: 30%;
-}
-
-.control:disabled {
-  opacity: 10%;
-}
-
 .control-mark {
   position: absolute;
   top: 0;
@@ -2728,13 +2701,9 @@ body {
   box-sizing: border-box;
 }
 
-.mark-active {
+.control-input[type="checkbox"]:checked + .control-mark {
   border: 2px solid #000000;
   border-radius: 3px;
-}
-
-.control-mark:focus-visible {
-  outline: 0;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
@@ -2752,8 +2721,23 @@ body {
   background-position: center;
 }
 
+.control-input[type="checkbox"]:focus-visible + .control-mark::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  outline: 2px solid #af4fff;
+  outline-offset: 4px;
+}
+
 .control-input[type="radio"] + .control-mark {
   border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark {
+  border: 2px solid #000000;
 }
 
 .control-input[type="radio"]:checked + .control-mark::before {
@@ -2769,6 +2753,33 @@ body {
   background-image: url("../images/icon/icon_control_ellipse.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.control-input[type="radio"]:focus-visible + .control-mark::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  outline: 2px solid #af4fff;
+  outline-offset: 4px;
+}
+
+.control-input:hover ~ span {
+  opacity: 60%;
+}
+
+.control-input:focus-visible ~ span {
+  opacity: 1;
+}
+
+.control-input:active ~ span {
+  opacity: 30%;
+}
+
+.control-input:disabled ~ span {
+  opacity: 10%;
 }
 
 .control-label {
